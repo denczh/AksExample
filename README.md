@@ -1,6 +1,6 @@
 # Introducción
 
-Este repositorio contiene los recursos necesarios para la formación de AKS impartido en Sogeti durante la última parte del año 2021. Con estos recursos más el contenido de la formación en sí, son suficientes para hacer lo siguiente:
+Este repositorio contiene los recursos necesarios para la formación de AKS impartido en Sogeti a finales del año 2021. Con estos recursos más el contenido de la formación en sí, son suficientes para hacer lo siguiente:
 
 1. desarrollar dos microservicios con arquitectura DDD en C# y .Net 5, 
 2. a partir de ellos crear los contenedores Docker, 
