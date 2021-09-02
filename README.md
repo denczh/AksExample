@@ -23,3 +23,21 @@ Plantilla para crear automáticamente la solución y los proyectos de los micros
 ## how to deploy AKS in commands.txt
 
 Archivo de ayuda con todos los comandos (y alguno más) correspondientes a la formación de AKS. Estos comandos son el día a día de un desarrollador de microservicios desplegados en AKS.
+
+# Troubleshooting
+
+Al crear un microservicio a partir de la plantilla, la solución es directamente compilable y ejecutable. Sin embargo, es posible que ocurra el siguiente error de certificado HTTPS:
+
+```
+System.InvalidOperationException: 'Unable to configure HTTPS endpoint. No server certificate was specified, and the default developer certificate could not be found or is out of date.
+To generate a developer certificate run 'dotnet dev-certs https'. To trust the certificate (Windows and macOS only) run 'dotnet dev-certs https --trust'.
+For more information on configuring HTTPS see https://go.microsoft.com/fwlink/?linkid=848054.'
+```
+
+Se recomienda visitar la web indicada en el error, https://go.microsoft.com/fwlink/?linkid=848054. El problema es que el certificado incluido como parte del SDK .Net Core no está verificado (_trusted_). Para verificarlo, hay que abrir una consola y ejecutar el siguiente comando:
+
+```
+dotnet dev-certs https --trust
+```
+
+Después de esto y de reiniciar Visual Studio, el error debería haber desaparecido.
