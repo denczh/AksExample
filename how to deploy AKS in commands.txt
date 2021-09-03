@@ -1,4 +1,4 @@
-||||| AZ COMMANDS |||||
+█████ AZ COMMANDS █████
 
 LOGS IN TO AZURE
 	az login
@@ -32,7 +32,7 @@ CONNECTS TO AN AKS CLUSTER
 	
 
 
-||||| DOCKER COMMANDS |||||
+█████ DOCKER COMMANDS █████
 
 BUILDS AND CREATES A DOCKER CONTAINER IMAGE
 	docker build -t atreyu:0.1.0 .
@@ -49,7 +49,7 @@ PUSHES A DOCKER CONTAINER IMAGE TO ACR
 	
 	
 	
-||||| KUBERNETES COMMANDS |||||
+█████ KUBERNETES COMMANDS █████
 
 APPLIES A CONFIGURATION FILE TO A CLUSTER
 	kubectl apply -f aks-deployment.yaml
